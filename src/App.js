@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import Forum from './forum/forum';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+constructor(){
+  super();
+}
+// everyting is rendered in the Forum component
+  render(){
+    return(
+      <div className='App'>
+        <Forum />
+      </div>
+    )
+  }
 }
 
 export default App;
